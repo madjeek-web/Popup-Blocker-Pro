@@ -3,76 +3,90 @@ Popup Blocker Pro : an open source, free, secure and powerful browser extension 
 
 ##
 
-## Technical Specifications
+Technical Specifications
+Browser Compatibility
+Chrome (Manifest V3)
 
-### Browser Compatibility
+Firefox (Manifest V2/V3)
 
-- Chrome (Manifest V3)
-- Firefox (Manifest V2/V3)
-- Edge
-- Opera
-- Brave
+Edge
 
-### Project Structure
+Opera
+
+Brave
+
+Project Structure
+text
 popup-blocker-pro/
 ├── src/
-│ ├── manifest.json (with browser-specific configurations)
-│ ├── background.js (service worker)
-│ ├── content.js (injected script)
-│ ├── popup.html (user interface)
-│ ├── popup.css (styles)
-│ ├── popup.js (popup logic)
-│ ├── options.html (options page)
-│ ├── options.js
-│ └── icons/
-│ ├── icon16.png
-│ ├── icon32.png
-│ ├── icon48.png
-│ └── icon128.png
+│   ├── manifest.json (with browser-specific configurations)
+│   ├── background.js (service worker)
+│   ├── content.js (injected script)
+│   ├── popup.html (user interface)
+│   ├── popup.css (styles)
+│   ├── popup.js (popup logic)
+│   ├── options.html (options page)
+│   ├── options.js
+│   └── icons/
+│       ├── icon16.png
+│       ├── icon32.png
+│       ├── icon48.png
+│       └── icon128.png
 ├── docs/
-│ └── README.md
+│   └── README.md
 ├── .gitignore
 ├── LICENSE (MIT)
 └── package.json
-
-text
-
-### Required Features
-
-#### Core Features:
-
+Required Features
+Core Features:
 Detection and blocking of popup/window opening attempts:
-- `window.open()` without user interaction
-- Links with `target="_blank"` using scripts
-- Redirects via JavaScript
-- Iframes attempting to open windows
 
-#### User Interface:
-- Toolbar icon
-- Control popup with:
-    - ON/OFF switch
-    - Block counter
-    - Quick access to settings
-- Options page with:
-    - Whitelist (authorized sites)
-    - Protection levels (basic/strict)
-    - Visual notifications
+window.open() without user interaction
 
-#### Security:
-- No data collection
-- Minimal required permissions
-- Auditable and commented code
-- Automatic updates via GitHub
+Links with target="_blank" using scripts
 
-### Development Instructions
+Redirects via JavaScript
 
-#### Manifest.json Structure:
-- Permissions: `["storage", "webNavigation", "tabs"]`
-- Host_permissions: `["<all_urls>"]` or optional
-- Persistent background service worker
+Iframes attempting to open windows
 
-#### Detection Algorithm:
-```javascript
+User Interface:
+Toolbar icon
+
+Control popup with:
+
+ON/OFF switch
+
+Block counter
+
+Quick access to settings
+
+Options page with:
+
+Whitelist (authorized sites)
+
+Protection levels (basic/strict)
+
+Visual notifications
+
+Security:
+No data collection
+
+Minimal required permissions
+
+Auditable and commented code
+
+Automatic updates via GitHub
+
+Development Instructions
+Manifest.json Structure:
+Permissions: ["storage", "webNavigation", "tabs"]
+
+Host_permissions: ["<all_urls>"] or optional
+
+Persistent background service worker
+
+Detection Algorithm:
+javascript
 // Logic to implement
 - Intercept window.open attempts
 - Check source (user click vs. script)
@@ -130,5 +144,5 @@ Automation scripts
 
 Video demo (optional)
 
-Author / Creator: Fabien Conéjéro
+Author / Creator: Fabien Conéjero
 GitHub Profile
