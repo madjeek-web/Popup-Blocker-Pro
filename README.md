@@ -3,9 +3,13 @@ Popup Blocker Pro : an open source, free, secure and powerful browser extension 
 
 ##
 
-Technical Specifications
-Browser Compatibility
-Chrome (Manifest V3) - Firefox (Manifest V2/V3) - Edge - Opera - Brave
+- Browser Compatibility :
+
+- Chrome (Manifest V3)
+- Firefox (Manifest V2/V3)
+- Edge
+- Opera
+- Brave
 
 ## ⚡ Quick Installation (Chrome)
 
