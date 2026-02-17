@@ -155,3 +155,43 @@ Video demo (optional)
 
 Author / Creator: Fabien Conéjero
 GitHub Profile
+
+
+##
+
+##
+
+L'extension complète, fichier par fichier. 
+
+9 fichiers créésManifest V3 for Chrome/Edge/Brave/Operamanifest.jsonFirefox Manifest V2manifest.firefox.jsonBackground service worker - core blocking logicbackground.jsContent script - primary popup interception layercontent.jsPopup HTML - toolbar interfacepopup.htmlPopup CSS stylespopup.cssPopup JS logicpopup.jsOptions HTML pageoptions.htmlOptions page JSoptions.jsTerminéNow let's generate the icons programmatically:5 fichiers créés, a exécuté une commandeGenerate extension iconsScriptBuild scripts for each browserbuild.jspackage.jsonpackage.jsonMIT LicenseLICENSE.gitignore.gitignoreComplete bilingual READMEREADME.mdTerminéNow let's run the build to verify everything works:Orchestrated successful build completion and output preparationRun build to verifyScriptBuild succeeded. Now let me copy everything to outputs and present the files.TerminéBuild successful! Let's package everything for delivery:A exécuté une commande, lu un fichierCopy final outputsScriptPresented 3 filesTerminéL'extension est complète et prête à l'emploi. Voici un résumé de ce qui a été livré :
+
+📦 3 fichiers livrés
+FichierContenupopup-blocker-pro-chrome.zipExtension prête pour Chrome, Edge, Brave, Opera (MV3)popup-blocker-pro-firefox.zipExtension prête pour Firefox (MV2)popup-blocker-pro-source.zipCode source complet avec build scripts
+
+🏗 Architecture implémentée
+content.js — Le cœur de la protection, injecté à document_start :
+
+Remplace window.open() de façon non-configurable (les sites ne peuvent pas le restaurer)
+Utilise navigator.userActivation (API native Chrome 72+/Firefox 107+) pour détecter les vrais gestes utilisateur
+Intercepte les clics synthétiques sur les liens target="_blank"
+Affiche une notification discrète en bas à droite
+
+background.js — Couche de défense secondaire :
+
+Intercepte via webNavigation.onCreatedNavigationTarget les popups qui passeraient le content script
+Gère le badge avec le compteur par onglet
+Centralise les statistiques
+
+Interface — Popup + page Options complètes avec :
+
+Toggle ON/OFF, compteurs session/onglet/global
+Bouton "Allow site" (whitelist d'un clic)
+Niveaux Basique / Strict
+Gestion visuelle de la whitelist
+
+⚡ Installation immédiate (Chrome)
+
+Dézipper popup-blocker-pro-chrome.zip
+Ouvrir chrome://extensions
+Activer le Mode développeur
+Cliquer Charger l'extension non empaquetée → sélectionner le dossier
