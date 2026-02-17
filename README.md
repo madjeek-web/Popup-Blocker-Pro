@@ -163,55 +163,55 @@ GitHub Profile
 
 # 🚫 Popup Blocker Pro
 
-Extension complète de blocage de popups pour Chrome, Firefox, Edge, Brave et Opera.
+Complete popup blocking extension for Chrome, Firefox, Edge, Brave, and Opera.
 
-## 📦 Structure des fichiers
+## 📦 File Structure
 
-### Extension complète, fichier par fichier
+### Complete extension, file by file
 
-| Fichier | Description |
-|---------|-------------|
-| `manifest.json` | Manifest V3 pour Chrome/Edge/Brave/Opera |
-| `manifest.firefox.json` | Manifest V2 pour Firefox |
-| `background.js` | Service worker - logique de blocage principale |
-| `content.js` | Script content - interception primaire des popups |
-| `popup.html` | Interface de la popup toolbar |
-| `popup.css` | Styles CSS de la popup |
-| `popup.js` | Logique JavaScript de la popup |
-| `options.html` | Page d'options |
-| `options.js` | Script de la page d'options |
+| File | Description |
+|------|-------------|
+| `manifest.json` | Manifest V3 for Chrome/Edge/Brave/Opera |
+| `manifest.firefox.json` | Manifest V2 for Firefox |
+| `background.js` | Service worker - core blocking logic |
+| `content.js` | Content script - primary popup interception |
+| `popup.html` | Toolbar popup interface |
+| `popup.css` | Popup CSS styles |
+| `popup.js` | Popup JavaScript logic |
+| `options.html` | Options page |
+| `options.js` | Options page script |
 
-### Gestion des icônes
+### Icon management
 
-| Fichier | Description |
-|---------|-------------|
-| `build.js` | Script de génération des icônes |
-| `package.json` | Configuration npm et dépendances |
-| `LICENSE` | Licence MIT |
-| `.gitignore` | Fichiers ignorés par Git |
-| `README.md` | Documentation complète bilingue |
+| File | Description |
+|------|-------------|
+| `build.js` | Icon generation script |
+| `package.json` | npm configuration and dependencies |
+| `LICENSE` | MIT License |
+| `.gitignore` | Git ignored files |
+| `README.md` | Complete bilingual documentation |
 
-### Packs d'installation
+### Installation packages
 
-| Fichier | Description |
-|---------|-------------|
-| `popup-blocker-pro-chrome.zip` | Extension prête pour Chrome, Edge, Brave, Opera (MV3) |
-| `popup-blocker-pro-firefox.zip` | Extension prête pour Firefox (MV2) |
-| `popup-blocker-pro-source.zip` | Code source complet avec build scripts |
+| File | Description |
+|------|-------------|
+| `popup-blocker-pro-chrome.zip` | Ready-to-use extension for Chrome, Edge, Brave, Opera (MV3) |
+| `popup-blocker-pro-firefox.zip` | Ready-to-use extension for Firefox (MV2) |
+| `popup-blocker-pro-source.zip` | Complete source code with build scripts |
 
-## 🏗 Architecture implémentée
+## 🏗 Implemented Architecture
 
-### Composants principaux
+### Main components
 
-| Fichier | Rôle |
-|---------|------|
-| **`content.js`** | Cœur de la protection, injecté à `document_start` :<br>• Remplace `window.open()` de façon non-configurable<br>• Utilise `navigator.userActivation` (API native Chrome 72+/Firefox 107+)<br>• Intercepte les clics synthétiques sur les liens `target="_blank"`<br>• Affiche une notification discrète en bas à droite |
-| **`background.js`** | Couche de défense secondaire :<br>• Intercepte via `webNavigation.onCreatedNavigationTarget`<br>• Gère le badge avec le compteur par onglet<br>• Centralise les statistiques |
-| **Interface** | Popup + page Options :<br>• Toggle ON/OFF<br>• Compteurs session/onglet/global<br>• Bouton "Allow site" (whitelist d'un clic)<br>• Niveaux Basique / Strict<br>• Gestion visuelle de la whitelist |
+| File | Role |
+|------|------|
+| **`content.js`** | Protection core, injected at `document_start`:<br>• Replaces `window.open()` in a non-configurable way<br>• Uses `navigator.userActivation` (native API Chrome 72+/Firefox 107+)<br>• Intercepts synthetic clicks on `target="_blank"` links<br>• Displays a discreet notification at bottom right |
+| **`background.js`** | Secondary defense layer:<br>• Intercepts via `webNavigation.onCreatedNavigationTarget`<br>• Manages badge with per-tab counter<br>• Centralizes statistics |
+| **Interface** | Popup + Options page:<br>• ON/OFF toggle<br>• Session/tab/global counters<br>• "Allow site" button (one-click whitelist)<br>• Basic / Strict levels<br>• Visual whitelist management |
 
-## ⚡ Installation immédiate (Chrome)
+## ⚡ Quick Installation (Chrome)
 
-1. Dézipper `popup-blocker-pro-chrome.zip`
-2. Ouvrir `chrome://extensions`
-3. Activer le **Mode développeur**
-4. Cliquer **Charger l'extension non empaquetée** → sélectionner le dossier
+1. Unzip `popup-blocker-pro-chrome.zip`
+2. Open `chrome://extensions`
+3. Enable **Developer mode**
+4. Click **Load unpacked** → select the folder
