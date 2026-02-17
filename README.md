@@ -87,13 +87,16 @@ Host_permissions: ["<all_urls>"] or optional
 
 Persistent background service worker
 
-Detection Algorithm:
-```javascript
-// Logic to implement
+Detection Algorithm :
+
+javascript :
+
+ // Logic to implement
 - Intercept window.open attempts
 - Check source (user click vs. script)
 - Block if not user-initiated
-```
+
+______
 
 Installation from GitHub
 Clear instructions in README
