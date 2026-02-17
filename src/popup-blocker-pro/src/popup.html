@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Popup Blocker Pro</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+
+  <!-- ─── Header ──────────────────────────────────────────────────────────── -->
+  <header class="header">
+    <div class="logo">
+      <img src="icons/icon32.png" alt="Popup Blocker Pro" />
+      <span class="brand">Popup Blocker Pro</span>
+    </div>
+    <label class="toggle" aria-label="Enable or disable Popup Blocker Pro">
+      <input type="checkbox" id="toggle-enabled" />
+      <span class="slider"></span>
+    </label>
+  </header>
+
+  <!-- ─── Status Banner ───────────────────────────────────────────────────── -->
+  <div class="status-banner" id="status-banner">
+    <span id="status-text">Protection Active</span>
+  </div>
+
+  <!-- ─── Stats ───────────────────────────────────────────────────────────── -->
+  <section class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-value" id="stat-session">0</div>
+      <div class="stat-label">This session</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value" id="stat-tab">0</div>
+      <div class="stat-label">This tab</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value" id="stat-total">0</div>
+      <div class="stat-label">All time</div>
+    </div>
+  </section>
+
+  <!-- ─── Current Site ─────────────────────────────────────────────────────── -->
+  <section class="site-section">
+    <div class="site-row">
+      <div class="site-info">
+        <span class="site-icon">🌐</span>
+        <span id="current-site" class="site-hostname">—</span>
+      </div>
+      <button id="btn-whitelist" class="btn btn-secondary btn-sm">Allow site</button>
+    </div>
+  </section>
+
+  <!-- ─── Protection Level ─────────────────────────────────────────────────── -->
+  <section class="level-section">
+    <label class="section-label">Protection level</label>
+    <div class="level-pills">
+      <button class="pill" data-level="basic" id="pill-basic">Basic</button>
+      <button class="pill" data-level="strict" id="pill-strict">Strict</button>
+    </div>
+    <p class="level-hint" id="level-hint"></p>
+  </section>
+
+  <!-- ─── Footer ──────────────────────────────────────────────────────────── -->
+  <footer class="footer">
+    <button id="btn-options" class="btn btn-ghost">⚙ Settings</button>
+    <span class="version" id="ext-version"></span>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>

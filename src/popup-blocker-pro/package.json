@@ -1,0 +1,18 @@
+{
+  "name": "popup-blocker-pro",
+  "version": "1.0.0",
+  "description": "Open source browser extension that blocks unwanted popups and background tabs.",
+  "private": true,
+  "scripts": {
+    "build":         "node build-scripts/build.js",
+    "build:chrome":  "node build-scripts/build.js --chrome",
+    "build:firefox": "node build-scripts/build.js --firefox",
+    "dev":           "echo 'Load src/ directly in your browser in developer mode.'"
+  },
+  "keywords": ["browser-extension", "popup-blocker", "privacy", "open-source"],
+  "author": "Popup Blocker Pro Contributors",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
