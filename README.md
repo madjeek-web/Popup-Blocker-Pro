@@ -1,4 +1,4 @@
-![popup-blocker-Pro-test-1.jpg](https://github.com/madjeek-web/Popup-Blocker-Pro/raw/main/image-Y5jEhWHje1ltdiW8yaG2I.jpg)
+<img src="https://github.com/madjeek-web/Popup-Blocker-Pro/raw/main/image-Y5jEhWHje1ltdiW8yaG2I.jpg" width="320" height="320">
 
 
 # Popup-Blocker-Pro
