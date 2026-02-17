@@ -549,6 +549,10 @@ Tests run automatically — everything should pass in green ✅
 
 ##
 
+##
+
+##
+
 🛡️ SECURITY BONUS : RECOMMENDED EXTENSIONS
 In addition to Popup Blocker Pro, here are extensions that enhance your online security and privacy :
 
