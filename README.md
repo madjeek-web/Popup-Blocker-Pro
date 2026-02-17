@@ -209,6 +209,12 @@ A window opens: click on "Extract"
 
 RESULT : A new folder appears, called popup-blocker-pro-firefox (without .zip)
 
+
+<video width="100%" autoplay loop muted playsinline>
+  <source src="https://github.com/madjeek-web/Popup-Blocker-Pro/raw/main/video-popup-blocker-pro.mp4" type="video/mp4">
+  Votre navigateur ne supporte pas la balise vidéo.
+</video>
+
 On Mac :
 
 Simply double-click on the .zip file
