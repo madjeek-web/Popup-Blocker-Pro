@@ -161,37 +161,57 @@ GitHub Profile
 
 ##
 
-L'extension complète, fichier par fichier. 
+# 🚫 Popup Blocker Pro
 
-9 fichiers créésManifest V3 for Chrome/Edge/Brave/Operamanifest.jsonFirefox Manifest V2manifest.firefox.jsonBackground service worker - core blocking logicbackground.jsContent script - primary popup interception layercontent.jsPopup HTML - toolbar interfacepopup.htmlPopup CSS stylespopup.cssPopup JS logicpopup.jsOptions HTML pageoptions.htmlOptions page JSoptions.jsTerminéNow let's generate the icons programmatically:5 fichiers créés, a exécuté une commandeGenerate extension iconsScriptBuild scripts for each browserbuild.jspackage.jsonpackage.jsonMIT LicenseLICENSE.gitignore.gitignoreComplete bilingual READMEREADME.mdTerminéNow let's run the build to verify everything works:Orchestrated successful build completion and output preparationRun build to verifyScriptBuild succeeded. Now let me copy everything to outputs and present the files.TerminéBuild successful! Let's package everything for delivery:A exécuté une commande, lu un fichierCopy final outputsScriptPresented 3 filesTerminéL'extension est complète et prête à l'emploi. Voici un résumé de ce qui a été livré :
+Extension complète de blocage de popups pour Chrome, Firefox, Edge, Brave et Opera.
 
-📦 3 fichiers livrés
-FichierContenupopup-blocker-pro-chrome.zipExtension prête pour Chrome, Edge, Brave, Opera (MV3)popup-blocker-pro-firefox.zipExtension prête pour Firefox (MV2)popup-blocker-pro-source.zipCode source complet avec build scripts
+## 📦 Structure des fichiers
 
-🏗 Architecture implémentée
-content.js — Le cœur de la protection, injecté à document_start :
+### Extension complète, fichier par fichier
 
-Remplace window.open() de façon non-configurable (les sites ne peuvent pas le restaurer)
-Utilise navigator.userActivation (API native Chrome 72+/Firefox 107+) pour détecter les vrais gestes utilisateur
-Intercepte les clics synthétiques sur les liens target="_blank"
-Affiche une notification discrète en bas à droite
+| Fichier | Description |
+|---------|-------------|
+| `manifest.json` | Manifest V3 pour Chrome/Edge/Brave/Opera |
+| `manifest.firefox.json` | Manifest V2 pour Firefox |
+| `background.js` | Service worker - logique de blocage principale |
+| `content.js` | Script content - interception primaire des popups |
+| `popup.html` | Interface de la popup toolbar |
+| `popup.css` | Styles CSS de la popup |
+| `popup.js` | Logique JavaScript de la popup |
+| `options.html` | Page d'options |
+| `options.js` | Script de la page d'options |
 
-background.js — Couche de défense secondaire :
+### Gestion des icônes
 
-Intercepte via webNavigation.onCreatedNavigationTarget les popups qui passeraient le content script
-Gère le badge avec le compteur par onglet
-Centralise les statistiques
+| Fichier | Description |
+|---------|-------------|
+| `build.js` | Script de génération des icônes |
+| `package.json` | Configuration npm et dépendances |
+| `LICENSE` | Licence MIT |
+| `.gitignore` | Fichiers ignorés par Git |
+| `README.md` | Documentation complète bilingue |
 
-Interface — Popup + page Options complètes avec :
+### Packs d'installation
 
-Toggle ON/OFF, compteurs session/onglet/global
-Bouton "Allow site" (whitelist d'un clic)
-Niveaux Basique / Strict
-Gestion visuelle de la whitelist
+| Fichier | Description |
+|---------|-------------|
+| `popup-blocker-pro-chrome.zip` | Extension prête pour Chrome, Edge, Brave, Opera (MV3) |
+| `popup-blocker-pro-firefox.zip` | Extension prête pour Firefox (MV2) |
+| `popup-blocker-pro-source.zip` | Code source complet avec build scripts |
 
-⚡ Installation immédiate (Chrome)
+## 🏗 Architecture implémentée
 
-Dézipper popup-blocker-pro-chrome.zip
-Ouvrir chrome://extensions
-Activer le Mode développeur
-Cliquer Charger l'extension non empaquetée → sélectionner le dossier
+### Composants principaux
+
+| Fichier | Rôle |
+|---------|------|
+| **`content.js`** | Cœur de la protection, injecté à `document_start` :<br>• Remplace `window.open()` de façon non-configurable<br>• Utilise `navigator.userActivation` (API native Chrome 72+/Firefox 107+)<br>• Intercepte les clics synthétiques sur les liens `target="_blank"`<br>• Affiche une notification discrète en bas à droite |
+| **`background.js`** | Couche de défense secondaire :<br>• Intercepte via `webNavigation.onCreatedNavigationTarget`<br>• Gère le badge avec le compteur par onglet<br>• Centralise les statistiques |
+| **Interface** | Popup + page Options :<br>• Toggle ON/OFF<br>• Compteurs session/onglet/global<br>• Bouton "Allow site" (whitelist d'un clic)<br>• Niveaux Basique / Strict<br>• Gestion visuelle de la whitelist |
+
+## ⚡ Installation immédiate (Chrome)
+
+1. Dézipper `popup-blocker-pro-chrome.zip`
+2. Ouvrir `chrome://extensions`
+3. Activer le **Mode développeur**
+4. Cliquer **Charger l'extension non empaquetée** → sélectionner le dossier
