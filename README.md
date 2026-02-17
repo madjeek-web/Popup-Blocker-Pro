@@ -513,6 +513,7 @@ Complete popup blocking extension for Chrome, Firefox, Edge, Brave, and Opera.
 
 ##
 
+-
 🛡️ SECURITY BONUS : RECOMMENDED EXTENSIONS
 In addition to Popup Blocker Pro, here are extensions that enhance your online security and privacy :
 
@@ -553,7 +554,7 @@ A powerful security extension that protects against phishing, malicious sites, a
 [![Add to Chrome](https://img.shields.io/badge/Chrome-Add%20Extension-4285F4?logo=googlechrome&logoColor=white&style=for-the-badge)](https://chrome.google.com/webstore/detail/guardio-protect-your-onli/ejhfadfbfhlamhcbeplldooogdmehgek)
 
 
-💡 Why These Extensions ?
+. 💡 Why These Extensions ?
 These 7 extensions perfectly complement Popup Blocker Pro for maximum protection :
 
 Extension	Primary Role
