@@ -15,6 +15,13 @@ Opera
 
 Brave
 
+## ⚡ Quick Installation (Chrome)
+
+1. Unzip `popup-blocker-pro-chrome.zip`
+2. Open `chrome://extensions`
+3. Enable **Developer mode**
+4. Click **Load unpacked** → select the folder
+
 Project Structure
 ```
 popup-blocker-pro/
