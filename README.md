@@ -491,9 +491,72 @@ Complete popup blocking extension for Chrome, Firefox, Edge, Brave, and Opera.
 | **`background.js`** | Secondary defense layer:<br>• Intercepts via `webNavigation.onCreatedNavigationTarget`<br>• Manages badge with per-tab counter<br>• Centralizes statistics |
 | **Interface** | Popup + Options page:<br>• ON/OFF toggle<br>• Session/tab/global counters<br>• "Allow site" button (one-click whitelist)<br>• Basic / Strict levels<br>• Visual whitelist management |
 
-## ⚡ Quick Installation (Chrome)
+## 
 
-1. Unzip `popup-blocker-pro-chrome.zip`
-2. Open `chrome://extensions`
-3. Enable **Developer mode**
-4. Click **Load unpacked** → select the folder
+⚡ Quick Installation :
+
+- Chrome / Edge / Brave / Opera :
+
+1. Unzip popup-blocker-pro-chrome.zip
+2. Open chrome://extensions (or edge://extensions, brave://extensions)
+3. Enable Developer mode
+4. Click on "Load unpacked"
+5. Select the unzipped folder
+
+- Firefox :
+
+1. Unzip popup-blocker-pro-firefox.zip
+2. Open about:debugging
+3. Click on "This Firefox" in the left menu
+4. Click on "Load Temporary Add-on"
+5. Select the manifest.json file inside the unzipped folder
+
+##
+
+🛡️ SECURITY BONUS : RECOMMENDED EXTENSIONS
+In addition to Popup Blocker Pro, here are extensions that enhance your online security and privacy :
+
+🔒 HTTPS Everywhere
+Automatically redirects to the HTTPS version of websites for a more secure and encrypted browsing experience.
+[![Add to Chrome](https://img.shields.io/badge/Chrome-Add%20Extension-4285F4?logo=googlechrome&logoColor=white&style=for-the-badge)](https://chrome.google.com/webstore/detail/https-everywhere/gcbommkclmclpchllfjekcdonpmejbdp)
+
+🛡️ McAfee® WebAdvisor
+Browse safely : McAfee® WebAdvisor warns you about dangerous sites, suspicious links, and malicious downloads.
+[![Add to Chrome](https://img.shields.io/badge/Chrome-Add%20Extension-4285F4?logo=googlechrome&logoColor=white&style=for-the-badge)](https://chrome.google.com/webstore/detail/mcafee-webadvisor/fheoggkfdfchfphceeifdbepaooicaho)
+
+🕵️ Privacy Badger
+Blocks hidden trackers. Created by the EFF (Electronic Frontier Foundation), a digital rights nonprofit, to prevent companies from spying on you.
+[![Add to Chrome](https://img.shields.io/badge/Chrome-Add%20Extension-4285F4?logo=googlechrome&logoColor=white&style=for-the-badge)](https://chrome.google.com/webstore/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp)
+
+
+🚫 uBlock Origin Lite
+An efficient and lightweight content blocker. Blocks intrusive ads, trackers, cryptocurrency miners, and more, right after installation.
+[![Add to Chrome](https://img.shields.io/badge/Chrome-Add%20Extension-4285F4?logo=googlechrome&logoColor=white&style=for-the-badge)](https://chrome.google.com/webstore/detail/ublock-origin-lite/ddkjiahejlhfcafbddmgiahcphecmpfh)
+
+🟢 Bitdefender TrafficLight (NEW)
+A lightweight extension from renowned security company Bitdefender. It displays a color-coded indicator (green/red) next to search results to warn you about dangerous sites. It also blocks phishing attempts, malware, and fraudulent websites in real-time.
+[![Add to Chrome](https://img.shields.io/badge/Chrome-Add%20Extension-4285F4?logo=googlechrome&logoColor=white&style=for-the-badge)](https://chrome.google.com/webstore/detail/bitdefender-trafficlight/cpojdnbpfidcfpciafhoooageljjhbbm)
+
+🔐 Bitwarden (NEW)
+An open-source password manager, widely recognized as one of the most secure and reliable. It stores your passwords, credit cards, and notes in an encrypted vault, automatically fills them on websites, and syncs across all your devices. The free version is extremely generous.
+[![Add to Chrome](https://img.shields.io/badge/Chrome-Add%20Extension-4285F4?logo=googlechrome&logoColor=white&style=for-the-badge)](https://chrome.google.com/webstore/detail/bitwarden-password-manage/nngceckbapebfimnlniiiahkandclblb)
+
+🛡️ Guardio (NEW)
+A powerful security extension that protects against phishing, malicious sites, and scams. It actively blocks harmful websites and alerts you if your personal information (email, passwords) has been exposed in a data breach. It's a comprehensive solution that secures your browser without slowing it down.
+[![Add to Chrome](https://img.shields.io/badge/Chrome-Add%20Extension-4285F4?logo=googlechrome&logoColor=white&style=for-the-badge)](https://chrome.google.com/webstore/detail/guardio-protect-your-onli/ejhfadfbfhlamhcbeplldooogdmehgek)
+
+
+💡 Why These Extensions ?
+These 7 extensions perfectly complement Popup Blocker Pro for maximum protection :
+
+Extension	Primary Role
+HTTPS Everywhere	Encrypts your connections
+McAfee WebAdvisor	Protects you from dangerous sites
+Privacy Badger	Blocks invisible trackers
+uBlock Origin Lite	Removes ads and miners
+Bitdefender TrafficLight	Visual indicator for safe/unsafe sites
+Bitwarden	Secure password manager
+Guardio	All-in-one browser security
+🔐 Together, these extensions + Popup Blocker Pro = a safer, more private, and worry-free browsing experience !
+
+📌 Tip : Click the links to install directly from the Chrome Web Store!
