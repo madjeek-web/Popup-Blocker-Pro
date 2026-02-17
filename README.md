@@ -510,6 +510,8 @@ Complete popup blocking extension for Chrome, Firefox, Edge, Brave, and Opera.
 
 ##
 
+![popup-blocker-Pro-test-1.jpg](https://github.com/madjeek-web/Popup-Blocker-Pro/raw/main/popup-blocker-Pro-test-1.jpg)
+
 Multi-test diagnostic page with visual interface.
 Download the html test page, to see in real time how the Pro popup blocker extension works :
 
@@ -554,7 +556,7 @@ Open popup-blocker-pro-test.html in your browser
 
 Tests run automatically — everything should pass in green ✅
 
-
+![popup-blocker-Pro-test-2.jpg](https://github.com/madjeek-web/Popup-Blocker-Pro/raw/main/popup-blocker-Pro-test-2.jpg)
 
 ##
 
