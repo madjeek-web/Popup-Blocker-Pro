@@ -11,7 +11,9 @@ Popup Blocker Pro : an open source, free, secure and powerful browser extension 
 - Opera
 - Brave
 
-## ⚡ Installation rapide
+## 
+
+⚡ Installation rapide
 
 - Chrome / Edge / Brave / Opera : 
 
