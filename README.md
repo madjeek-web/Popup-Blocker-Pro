@@ -16,7 +16,7 @@ Opera
 Brave
 
 Project Structure
-```text
+```
 popup-blocker-pro/
 ├── src/
 │   ├── manifest.json (with browser-specific configurations)
