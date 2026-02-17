@@ -46,13 +46,13 @@ https://github.com/madjeek-web/Popup-Blocker-Pro/raw/main/releases/popup-blocker
 
 ##
 
-HOW TO INSTALL THE EXTENSION IN CHROME / Edge / Brave / Opera
+- HOW TO INSTALL THE EXTENSION IN CHROME / Edge / Brave / Opera
 (Step-by-step instructions with explanations)
 
 STEP 1 : FIND AND DOWNLOAD THE FILE
-Go to your GitHub repository : https://github.com/FabienConejero/Popup-Blocker-Pro
+Go to the GitHub repository: https://github.com/madjeek-web/Popup-Blocker-Pro
 
-Look for the popup-blocker-pro-chrome.zip file in the file list
+Look for the file popup-blocker-pro-chrome.zip in the file list (inside the releases folder)
 
 RIGHT-CLICK on this file (not left-click)
 
@@ -92,11 +92,10 @@ It automatically decompresses and creates a folder next to it
 STEP 3 : OPEN THE EXTENSIONS PAGE IN CHROME
 Open Google Chrome (the browser)
 
-In the address bar (at the top, where you type website addresses), type exactly :
+In the address bar (at the top, where you type website addresses), type exactly:
 
 
 chrome://extensions
-
 Press Enter
 
 RESULT : You arrive at a page showing all extensions installed in Chrome.
@@ -137,7 +136,7 @@ The extension is enabled by default and works immediately
 HOW TO USE THE EXTENSION
 Click on the 🔒 icon in the toolbar
 
-A small window opens with:
+A small window opens with :
 
 An ON/OFF switch to enable/disable
 
@@ -156,29 +155,27 @@ Confirm by clicking on "Remove" in the window that opens
 
 - SIMPLE VISUAL SUMMARY :
 
-DOWNLOAD → popup-blocker-pro-chrome.zip
+1. DOWNLOAD → popup-blocker-pro-chrome.zip
+2. UNZIP → it becomes a FOLDER
+3. CHROME → type chrome://extensions
+4. ACTIVATE → Developer mode (switch at top right)
+5. CLICK → "Load unpacked"
+6. CHOOSE → the unzipped FOLDER
+7. DONE → The icon appears at top right
 
-UNZIP → it becomes a FOLDER
 
-CHROME → type chrome://extensions
-
-ACTIVATE → Developer mode (switch at top right)
-
-CLICK → "Load unpacked"
-
-CHOOSE → the unzipped FOLDER
-
-DONE → The icon appears at top right
 
 ##
+
+
 
 - HOW TO INSTALL THE EXTENSION IN FIREFOX
 (Step-by-step instructions with explanations)
 
-STEP 1: FIND AND DOWNLOAD THE FILE
-Go to your GitHub repository: https://github.com/FabienConejero/Popup-Blocker-Pro
+STEP 1 : FIND AND DOWNLOAD THE FILE
+Go to the GitHub repository: https://github.com/madjeek-web/Popup-Blocker-Pro
 
-Look for popup-blocker-pro-firefox.zip in the file list
+Look for the file popup-blocker-pro-firefox.zip in the file list (inside the releases folder)
 
 RIGHT-CLICK on this file (not left-click)
 
@@ -193,7 +190,7 @@ The file downloads to your computer
 STEP 2 : UNZIP THE FILE (VERY IMPORTANT!)
 A ZIP file is like a compressed suitcase. You need to open it to see what's inside.
 
-On Windows:
+On Windows :
 
 Go to the folder where you downloaded the file (Downloads or Desktop)
 
@@ -215,7 +212,7 @@ It automatically decompresses and creates a folder next to it
 
 ⚠️ WARNING: You must KEEP this folder! Do not delete it after installation, otherwise the extension will stop working.
 
-STEP 3 : OPEN THE FIREFOX DEBUGGING PAGE
+STEP 3: OPEN THE FIREFOX DEBUGGING PAGE
 Open Firefox (the browser)
 
 In the address bar (at the top, where you type website addresses), type exactly :
@@ -238,7 +235,7 @@ Click on the button "Load Temporary Add-on" (under "Temporary Extensions")
 
 A window opens to choose a file on your computer
 
-Navigate to the folder you unzipped in STEP 2:
+Navigate to the folder you unzipped in STEP 2 :
 
 popup-blocker-pro-firefox (the folder)
 
@@ -282,7 +279,7 @@ Find "Popup Blocker Pro" in the "Temporary Extensions" list
 
 Click on "Remove" (button on the right)
 
-SIMPLE VISUAL SUMMARY :
+- SIMPLE VISUAL SUMMARY :
 
 1. DOWNLOAD → popup-blocker-pro-firefox.zip
 2. UNZIP → it becomes a FOLDER
