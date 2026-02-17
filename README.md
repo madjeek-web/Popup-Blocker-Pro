@@ -16,7 +16,7 @@ Opera
 Brave
 
 Project Structure
-text
+```text
 popup-blocker-pro/
 ├── src/
 │   ├── manifest.json (with browser-specific configurations)
@@ -37,6 +37,8 @@ popup-blocker-pro/
 ├── .gitignore
 ├── LICENSE (MIT)
 └── package.json
+```
+
 Required Features
 Core Features:
 Detection and blocking of popup/window opening attempts:
@@ -86,11 +88,13 @@ Host_permissions: ["<all_urls>"] or optional
 Persistent background service worker
 
 Detection Algorithm:
-javascript
+```javascript
 // Logic to implement
 - Intercept window.open attempts
 - Check source (user click vs. script)
 - Block if not user-initiated
+```
+
 Installation from GitHub
 Clear instructions in README
 
@@ -109,10 +113,12 @@ Chrome/Edge/Brave: Developer mode → Load unpacked extension
 Firefox: about:debugging → Load Temporary Add-on
 
 For Developers:
-bash
+```bash
 git clone [your-repo]
 npm install
 npm run build  # Generates builds for each browser
+```
+
 Required Tests
 Tests on various websites known for popups
 
