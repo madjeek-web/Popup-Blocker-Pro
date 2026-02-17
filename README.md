@@ -513,7 +513,6 @@ Complete popup blocking extension for Chrome, Firefox, Edge, Brave, and Opera.
 
 ##
 
--
 🛡️ SECURITY BONUS : RECOMMENDED EXTENSIONS
 In addition to Popup Blocker Pro, here are extensions that enhance your online security and privacy :
 
