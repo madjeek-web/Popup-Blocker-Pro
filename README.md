@@ -11,12 +11,21 @@ Popup Blocker Pro : an open source, free, secure and powerful browser extension 
 - Opera
 - Brave
 
-## ⚡ Quick Installation (Chrome)
-
-1. Unzip `popup-blocker-pro-chrome.zip`
-2. Open `chrome://extensions`
-3. Enable **Developer mode**
-4. Click **Load unpacked** → select the folder
+## ⚡ Installation rapide
+Chrome / Edge / Brave / Opera
+text
+1. Décompresser popup-blocker-pro-chrome.zip
+2. Ouvrir chrome://extensions  (ou edge://extensions, brave://extensions)
+3. Activer le mode développeur
+4. Cliquer sur "Charger l'extension non empaquetée"
+5. Sélectionner le dossier décompressé
+Firefox
+text
+1. Décompresser popup-blocker-pro-firefox.zip
+2. Ouvrir about:debugging
+3. Cliquer sur "Ce Firefox" dans le menu gauche
+4. Cliquer sur "Charger un module complémentaire temporaire"
+5. Sélectionner le fichier manifest.json dans le dossier décompressé
 
 ##
 
