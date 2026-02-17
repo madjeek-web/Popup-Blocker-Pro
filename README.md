@@ -37,6 +37,8 @@ Browser Compatibility :
 
 ##
 
+<img src="https://github.com/madjeek-web/Popup-Blocker-Pro/raw/main/image-sK5z9O_0K7BxzEt4Md1E9.jpg" width="320" height="320">
+
 🔗 OFFICIAL DOWNLOAD LINKS
 
 For Google Chrome :
