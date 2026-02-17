@@ -435,9 +435,6 @@ Automation scripts
 
 Video demo (optional)
 
-Author / Creator: Fabien Conéjero
-GitHub Profile
-
 
 ##
 
