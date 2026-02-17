@@ -515,7 +515,7 @@ Complete popup blocking extension for Chrome, Firefox, Edge, Brave, and Opera.
 Multi-test diagnostic page with visual interface.
 Download the html test page, to see in real time how the Pro popup blocker extension works :
 
-[popup-blocker-pro-test.html](https://github.com/madjeek-web/Popup-Blocker-Pro/raw/main/popup-blocker-pro-test.html)
+[popup-blocker-pro-test.html](https://github.com/madjeek-web/Popup-Blocker-Pro/raw/main/popup-blocker-pro-test.html){:target="_blank" rel="noopener noreferrer"}
 
 If you simply want to display the page in the browser (to use it directly without downloading), use instead :
 
