@@ -302,7 +302,7 @@ Firefox	Select the manifest.json FILE inside the folder
 
 ##
 
-<img src="https://github.com/madjeek-web/Popup-Blocker-Pro/raw/main/image-VoXgt_lWpmIV9G_02aXd2.jep" width="320" height="320">
+<img src="https://github.com/madjeek-web/Popup-Blocker-Pro/raw/main/image-VoXgt_lWpmIV9G_02aXd2.jpg" width="320" height="320">
 
 Project Structure
 ```
