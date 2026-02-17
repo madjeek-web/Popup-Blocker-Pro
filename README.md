@@ -34,6 +34,18 @@ Browser Compatibility :
 
 ##
 
+🔗 OFFICIAL DOWNLOAD LINKS
+
+For Google Chrome :
+
+https://github.com/madjeek-web/Popup-Blocker-Pro/raw/main/releases/popup-blocker-pro-chrome.zip
+
+For Mozilla Firefox :
+
+https://github.com/madjeek-web/Popup-Blocker-Pro/raw/main/releases/popup-blocker-pro-firefox.zip
+
+##
+
 HOW TO INSTALL THE EXTENSION IN CHROME / Edge / Brave / Opera
 (Step-by-step instructions with explanations)
 
