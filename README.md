@@ -51,6 +51,8 @@ https://github.com/madjeek-web/Popup-Blocker-Pro/raw/main/releases/popup-blocker
 
 ##
 
+<img src="https://github.com/madjeek-web/Popup-Blocker-Pro/raw/main/pop-captur-interface.jpg.jpg" width="80%" height="80%">
+
 - HOW TO INSTALL THE EXTENSION IN CHROME / Edge / Brave / Opera
 (Step-by-step instructions with explanations)
 
