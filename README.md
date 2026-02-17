@@ -510,6 +510,45 @@ Complete popup blocking extension for Chrome, Firefox, Edge, Brave, and Opera.
 
 ##
 
+🧪 COMPREHENSIVE EXTENSION TEST PAGE
+TEST : Complete HTML diagnostic page with multiple test scenarios (auto, manual, iframe, scripted links) — each test displays in real-time with PASS/FAIL. Security terminal style.
+
+File created, read a file: popup-blocker-pro-test.html
+
+🧪 What This Test Page Does
+Automatic Tests (launched on page load)
+#	Scenario	What It Verifies
+1	window.open() automatic	Basic popup blocking
+2	window.open("https://…")	Popup with real URL
+3	window.open(…, "features")	Popup with window options
+4	Delayed popup (1 second with setTimeout)	Classic ad site technique
+5	Fake mousemove + window.open	Attempt to bypass detection
+6	Attempt from an iframe	Multi-frame protection
+
+Manual Tests (you click)
+Scenario	What It Verifies
+Real user click	Checks that the extension isn't too aggressive (should allow it)
+target="_blank" link	Behavior of a standard link
+Burst × 5	5 popups at once
+
+🖥️ Interface
+Feature	Description
+Global banner	Turns green/red in real-time
+Score display	Example : 6 / 6
+Event log	Timestamped log at the bottom
+Design	Terminal/cybersecurity theme consistent with the extension
+
+📋 How to Use
+Install the extension
+
+Open popup-blocker-pro-test.html in your browser
+
+Tests run automatically — everything should pass in green ✅
+
+
+
+##
+
 🛡️ SECURITY BONUS : RECOMMENDED EXTENSIONS
 In addition to Popup Blocker Pro, here are extensions that enhance your online security and privacy :
 
