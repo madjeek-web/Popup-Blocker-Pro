@@ -519,7 +519,7 @@ Download the html test page, to see in real time how the Pro popup blocker exten
 
 If you simply want to display the page in the browser (to use it directly without downloading), use instead :
 
-🌐 https://madjeek-web.github.io/Popup-Blocker-Pro/popup-blocker-pro-test.html
+🌐 https://madjeek-web.github.io/popup-blocker-pro-test.html
 
 🧪 COMPREHENSIVE EXTENSION TEST PAGE
 TEST : Complete HTML diagnostic page with multiple test scenarios (auto, manual, iframe, scripted links) — each test displays in real-time with PASS/FAIL. Security terminal style.
