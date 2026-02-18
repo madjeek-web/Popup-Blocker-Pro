@@ -56,7 +56,7 @@ https://github.com/madjeek-web/Popup-Blocker-Pro/raw/main/releases/popup-blocker
 - HOW TO INSTALL THE EXTENSION IN CHROME / Edge / Brave / Opera
 (Step-by-step instructions with explanations)
 
-<img src="https://github.com/madjeek-web/Popup-Blocker-Pro/raw/main/image-Y5jEhWHje1ltdiW8yaG2I.jpg" width="320" height="320">
+<img src="https://github.com/madjeek-web/Popup-Blocker-Pro/raw/main/3d-glassy-Google-CHROME-Edg.jpg" width="900" height="346">
 
 STEP 1 : FIND AND DOWNLOAD THE FILE
 Go to the GitHub repository: https://github.com/madjeek-web/Popup-Blocker-Pro
