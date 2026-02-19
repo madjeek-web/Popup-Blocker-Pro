@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Popup Blocker Pro — Diagnostic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --purple:       #7b5cf0;
+      --purple-dark:  #5c3ec9;
+      --purple-light: #ede9ff;
+      --purple-soft:  #f3f0ff;
+      --gold:         #f5c330;
+      --gold-light:   #fef8e3;
+      --pass:         #22c55e;
+      --pass-light:   #dcfce7;
+      --fail:         #ef4444;
+      --fail-light:   #fee2e2;
+      --warn:         #f59e0b;
+      --warn-light:   #fef3c7;
+      --bg:           #f8f6ff;
+      --surface:      #ffffff;
+      --text:         #1e1535;
+      --muted:        #8878c0;
+      --border:       #e8e0ff;
+      --shadow:       0 4px 24px rgba(123,92,240,.12);
+      --shadow-card:  0 2px 12px rgba(123,92,240,.08);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 14px;
+      line-height: 1.5;
+      min-height: 100vh;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: radial-gradient(circle, rgba(123,92,240,.07) 1.5px, transparent 1.5px);
+      background-size: 32px 32px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .deco {
+      position: fixed;
+      font-size: 48px;
+      opacity: .08;
+      pointer-events: none;
+      z-index: 0;
+      user-select: none;
+    }
+    .deco-1 { top: 8%; left: 4%;  animation: float1 7s ease-in-out infinite; }
+    .deco-2 { top: 20%; right: 5%; animation: float2 9s ease-in-out infinite; font-size: 36px; }
+    .deco-3 { bottom: 15%; left: 6%; animation: float1 11s ease-in-out infinite; font-size: 40px; }
+    .deco-4 { bottom: 30%; right: 3%; animation: float2 8s ease-in-out infinite; font-size: 32px; }
+    .deco-5 { top: 50%; left: 2%; animation: float1 10s ease-in-out infinite; font-size: 28px; }
+
+    @keyframes float1 { 0%,100% { transform:translateY(0) rotate(-8deg); } 50% { transform:translateY(-18px) rotate(4deg); } }
+    @keyframes float2 { 0%,100% { transform:translateY(0) rotate(6deg); } 50% { transform:translateY(-14px) rotate(-5deg); } }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 48px 20px 80px;
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+      animation: slideDown .5s cubic-bezier(.34,1.56,.64,1) both;
+    }
+    @keyframes slideDown { from { opacity:0; transform:translateY(-24px); } }
+
+    .logo-wrap {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 80px;
+      height: 80px;
+      background: var(--surface);
+      border-radius: 22px;
+      box-shadow: var(--shadow), 0 0 0 4px var(--purple-light);
+      margin-bottom: 18px;
+      font-size: 44px;
+      transition: transform .3s cubic-bezier(.34,1.56,.64,1);
+    }
+    .logo-wrap:hover { transform: scale(1.1) rotate(-5deg); }
+
+    h1 {
+      font-family: 'Nunito', sans-serif;
+      font-size: clamp(26px, 5vw, 38px);
+      font-weight: 900;
+      color: var(--text);
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+    h1 em { font-style: normal; color: var(--purple); }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 14px;
+      max-width: 440px;
+      margin: 0 auto;
+    }
+
+    /* Global card */
+    .global-card {
+      background: var(--surface);
+      border-radius: 24px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: var(--shadow);
+      border: 2px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      transition: border-color .4s, background .4s, box-shadow .4s;
+      animation: popIn .5s .15s cubic-bezier(.34,1.56,.64,1) both;
+    }
+    @keyframes popIn { from { opacity:0; transform:scale(.9); } }
+
+    .global-card.pass { border-color: var(--pass); background: linear-gradient(135deg, #fff 60%, var(--pass-light)); box-shadow: 0 4px 32px rgba(34,197,94,.18); }
+    .global-card.fail { border-color: var(--fail); background: linear-gradient(135deg, #fff 60%, var(--fail-light)); box-shadow: 0 4px 32px rgba(239,68,68,.15); }
+
+    .global-emoji {
+      font-size: 48px;
+      flex-shrink: 0;
+      line-height: 1;
+      transition: transform .4s cubic-bezier(.34,1.56,.64,1);
+    }
+    .global-card.pass .global-emoji,
+    .global-card.fail .global-emoji { transform: scale(1.15); }
+
+    .global-text h2 {
+      font-family: 'Nunito', sans-serif;
+      font-size: 17px;
+      font-weight: 800;
+      color: var(--muted);
+      transition: color .4s;
+      margin-bottom: 4px;
+    }
+    .global-card.pass .global-text h2 { color: #16a34a; }
+    .global-card.fail .global-text h2 { color: #dc2626; }
+    .global-text p { font-size: 13px; color: var(--muted); }
+
+    .global-score {
+      margin-left: auto;
+      flex-shrink: 0;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 900;
+      font-size: 28px;
+      background: var(--purple-light);
+      color: var(--purple);
+      padding: 10px 20px;
+      border-radius: 16px;
+      transition: background .4s, color .4s;
+      letter-spacing: -1px;
+    }
+    .global-card.pass .global-score { background: var(--pass-light); color: #16a34a; }
+    .global-card.fail .global-score { background: var(--fail-light); color: #dc2626; }
+
+    /* Section header */
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+    .section-label {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      font-size: 13px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      white-space: nowrap;
+    }
+    .section-line { flex: 1; height: 2px; background: var(--border); border-radius: 1px; }
+
+    /* Test cards */
+    .tests-grid { display: flex; flex-direction: column; gap: 10px; margin-bottom: 28px; }
+
+    .test-card {
+      background: var(--surface);
+      border: 2px solid var(--border);
+      border-radius: 18px;
+      padding: 16px 18px;
+      display: grid;
+      grid-template-columns: 44px 1fr auto;
+      align-items: center;
+      gap: 14px;
+      box-shadow: var(--shadow-card);
+      transition: border-color .3s, transform .2s;
+      animation: fadeUp .4s cubic-bezier(.34,1.56,.64,1) both;
+    }
+    .test-card:nth-child(1){ animation-delay:.1s }
+    .test-card:nth-child(2){ animation-delay:.16s }
+    .test-card:nth-child(3){ animation-delay:.22s }
+    .test-card:nth-child(4){ animation-delay:.28s }
+    .test-card:nth-child(5){ animation-delay:.34s }
+    .test-card:nth-child(6){ animation-delay:.40s }
+
+    @keyframes fadeUp { from { opacity:0; transform:translateY(16px); } }
+
+    .test-card.pass { border-color: #86efac; }
+    .test-card.fail { border-color: #fca5a5; }
+    .test-card:hover { transform: translateX(4px); }
+
+    .test-bubble {
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      background: var(--purple-light);
+      flex-shrink: 0;
+      transition: background .3s, transform .4s cubic-bezier(.34,1.56,.64,1);
+    }
+    .test-card.pass .test-bubble { background: var(--pass-light); transform: scale(1.1); }
+    .test-card.fail .test-bubble { background: var(--fail-light); }
+    .test-card.running .test-bubble { animation: wobble 1s ease-in-out infinite; }
+
+    @keyframes wobble { 0%,100% { transform:rotate(-8deg) scale(1); } 50% { transform:rotate(8deg) scale(1.05); } }
+
+    .test-info { min-width: 0; }
+    .test-name { font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 14px; color: var(--text); margin-bottom: 2px; }
+    .test-desc  { font-size: 11px; color: var(--muted); }
+
+    .test-pill {
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      font-size: 11px;
+      letter-spacing: .5px;
+      text-transform: uppercase;
+      background: var(--purple-light);
+      color: var(--purple);
+      white-space: nowrap;
+      transition: background .3s, color .3s;
+    }
+    .test-card.pass    .test-pill { background: var(--pass-light); color: #16a34a; }
+    .test-card.fail    .test-pill { background: var(--fail-light); color: #dc2626; }
+    .test-card.running .test-pill { background: var(--warn-light); color: #92400e; }
+
+    /* Manual section */
+    .manual-card {
+      background: var(--surface);
+      border: 2px solid var(--border);
+      border-radius: 24px;
+      padding: 22px 24px;
+      box-shadow: var(--shadow-card);
+      margin-bottom: 20px;
+      animation: fadeUp .4s .45s cubic-bezier(.34,1.56,.64,1) both;
+    }
+
+    .manual-buttons {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .manual-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 3px;
+      padding: 14px 16px;
+      background: var(--purple-soft);
+      border: 2px solid transparent;
+      border-radius: 14px;
+      cursor: pointer;
+      font-family: 'Nunito Sans', sans-serif;
+      transition: all .2s cubic-bezier(.34,1.56,.64,1);
+      text-align: left;
+    }
+    .manual-btn:hover { background: var(--purple-light); border-color: var(--purple); transform: translateY(-2px); box-shadow: 0 6px 18px rgba(123,92,240,.18); }
+    .manual-btn:active { transform: scale(.97); }
+
+    .manual-btn-icon  { font-size: 22px; margin-bottom: 2px; }
+    .manual-btn-label { font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 13px; color: var(--purple-dark); }
+    .manual-btn-desc  { font-size: 11px; color: var(--muted); line-height: 1.4; }
+
+    .manual-result {
+      min-height: 46px;
+      padding: 12px 16px;
+      background: var(--bg);
+      border: 2px solid var(--border);
+      border-radius: 12px;
+      font-size: 13px;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Log */
+    .log-card {
+      background: var(--surface);
+      border: 2px solid var(--border);
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+      animation: fadeUp .4s .5s cubic-bezier(.34,1.56,.64,1) both;
+    }
+
+    .log-head {
+      padding: 14px 22px;
+      border-bottom: 2px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .log-title {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      font-size: 13px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .log-clear {
+      background: none;
+      border: none;
+      color: var(--muted);
+      cursor: pointer;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 8px;
+      transition: all .15s;
+    }
+    .log-clear:hover { background: var(--fail-light); color: var(--fail); }
+
+    .log-body {
+      padding: 14px 22px;
+      min-height: 110px;
+      max-height: 190px;
+      overflow-y: auto;
+      font-size: 12px;
+      line-height: 1.9;
+    }
+    .log-body::-webkit-scrollbar { width: 4px; }
+    .log-body::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+    .log-line {
+      display: flex;
+      gap: 10px;
+      animation: logSlide .2s cubic-bezier(.34,1.56,.64,1);
+    }
+    @keyframes logSlide { from { opacity:0; transform:translateX(-8px); } }
+
+    .log-time { color: var(--muted); flex-shrink: 0; font-size: 11px; }
+    .log-pass { color: #16a34a; }
+    .log-fail { color: #dc2626; }
+    .log-info { color: var(--purple); }
+    .log-warn { color: #92400e; }
+
+    /* Confetti */
+    .confetti-piece {
+      position: fixed;
+      pointer-events: none;
+      z-index: 9999;
+      opacity: 0;
+    }
+    @keyframes confettiFall {
+      0%   { opacity:1; transform: translateY(0) rotate(0deg) scale(1); }
+      80%  { opacity:.8; }
+      100% { opacity:0; transform: translateY(100vh) rotate(720deg) scale(.5); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="deco deco-1">🍿</div>
+  <div class="deco deco-2">🔮</div>
+  <div class="deco deco-3">✨</div>
+  <div class="deco deco-4">🧮</div>
+  <div class="deco deco-5">🍿</div>
+
+<div class="container">
+
+  <div class="header">
+    <div class="logo-wrap">🍿</div>
+    <h1>Popup Blocker <em>Pro</em></h1>
+    <p class="subtitle">Cette page teste automatiquement si l'extension bloque correctement les popups indésirables.</p>
+  </div>
+
+  <div class="global-card" id="global-card">
+    <div class="global-emoji" id="global-emoji">⏳</div>
+    <div class="global-text">
+      <h2 id="global-title">Tests en cours…</h2>
+      <p id="global-desc">Analyse des protections en temps réel.</p>
+    </div>
+    <div class="global-score" id="global-score">— / —</div>
+  </div>
+
+  <div class="section-header">
+    <span class="section-label">🤖 Tests automatiques</span>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="tests-grid" id="tests-grid"></div>
+
+  <div class="section-header" style="margin-top:8px;">
+    <span class="section-label">👆 Tests manuels</span>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="manual-card">
+    <div class="manual-buttons">
+      <button class="manual-btn" onclick="manualTest('click-open')">
+        <span class="manual-btn-icon">🖱️</span>
+        <span class="manual-btn-label">Vrai clic utilisateur</span>
+        <span class="manual-btn-desc">Doit être autorisé par l'extension</span>
+      </button>
+      <button class="manual-btn" onclick="manualTest('blank-link')">
+        <span class="manual-btn-icon">🔗</span>
+        <span class="manual-btn-label">Lien target=_blank</span>
+        <span class="manual-btn-desc">Lien externe cliqué normalement</span>
+      </button>
+      <button class="manual-btn" onclick="manualTest('rapid-fire')">
+        <span class="manual-btn-icon">💥</span>
+        <span class="manual-btn-label">Rafale × 5 popups</span>
+        <span class="manual-btn-desc">Tous doivent être bloqués</span>
+      </button>
+    </div>
+    <div class="manual-result" id="manual-result">
+      <span>👆 Cliquez un bouton pour tester manuellement.</span>
+    </div>
+  </div>
+
+  <div class="section-header">
+    <span class="section-label">📋 Journal</span>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="log-card">
+    <div class="log-head">
+      <span class="log-title">Événements</span>
+      <button class="log-clear" onclick="clearLog()">🗑 Effacer</button>
+    </div>
+    <div class="log-body" id="log-body"></div>
+  </div>
+
+</div>
+
+<a id="blank-link" href="https://example.com" target="_blank" style="display:none">blank</a>
+
+<script>
+const TESTS = [
+  {
+    id: 'auto-blank',   emoji: '🚫',
+    name: 'window.open() automatique',
+    desc: 'Ouverture sans aucun geste utilisateur',
+    run: () => { const w = window.open('about:blank','_blank'); if(w){w.close();return false;} return true; },
+  },
+  {
+    id: 'auto-url',     emoji: '🌐',
+    name: 'window.open() avec URL',
+    desc: 'window.open("https://example.com") sans clic',
+    run: () => { const w = window.open('https://example.com','_blank'); if(w){w.close();return false;} return true; },
+  },
+  {
+    id: 'auto-features', emoji: '🪟',
+    name: 'Popup avec paramètres',
+    desc: 'window.open(url, "_blank", "width=400,height=300")',
+    run: () => { const w = window.open('about:blank','_blank','width=400,height=300'); if(w){w.close();return false;} return true; },
+  },
+  {
+    id: 'delayed',      emoji: '⏱️',
+    name: 'Popup différé (1 seconde)',
+    desc: 'setTimeout(() => window.open(…), 1000)',
+    run: () => new Promise(resolve => setTimeout(() => { const w=window.open('about:blank'); if(w){w.close();resolve(false);}else resolve(true); }, 1000)),
+  },
+  {
+    id: 'fake-event',   emoji: '🎭',
+    name: 'Faux événement souris',
+    desc: 'Ouverture après un click synthétique (non-trusted)',
+    run: () => { document.dispatchEvent(new MouseEvent('click',{bubbles:true,cancelable:true})); const w=window.open('about:blank'); if(w){w.close();return false;} return true; },
+  },
+  {
+    id: 'iframe',       emoji: '🖼️',
+    name: 'Tentative depuis iframe',
+    desc: "Un iframe injecté tente d'ouvrir une fenêtre",
+    run: () => new Promise(resolve => {
+      const iframe = document.createElement('iframe');
+      iframe.style.display = 'none';
+      iframe.srcdoc = `<script>try{const w=window.open('about:blank');window.parent.postMessage({id:'if-t',b:w===null},'*');if(w)w.close();}catch(e){window.parent.postMessage({id:'if-t',b:true},'*');}<\/script>`;
+      const h = e => { if(e.data?.id==='if-t'){window.removeEventListener('message',h);if(document.body.contains(iframe))document.body.removeChild(iframe);resolve(e.data.b);} };
+      window.addEventListener('message', h);
+      document.body.appendChild(iframe);
+      setTimeout(()=>{ window.removeEventListener('message',h); if(document.body.contains(iframe))document.body.removeChild(iframe); resolve(true); }, 2500);
+    }),
+  },
+];
+
+let passed=0, failed=0;
+const total=TESTS.length;
+
+function log(type, msg) {
+  const body = document.getElementById('log-body');
+  const now = new Date().toLocaleTimeString('fr-FR',{hour12:false});
+  const icons = {pass:'✅',fail:'❌',info:'💜',warn:'⚠️'};
+  const line = document.createElement('div');
+  line.className = 'log-line';
+  line.innerHTML = `<span class="log-time">${now}</span><span class="log-${type}">${icons[type]} ${msg}</span>`;
+  body.appendChild(line);
+  body.scrollTop = body.scrollHeight;
+}
+function clearLog() { document.getElementById('log-body').innerHTML=''; }
+
+function renderCards() {
+  const grid = document.getElementById('tests-grid');
+  grid.innerHTML = '';
+  TESTS.forEach(t => {
+    const card = document.createElement('div');
+    card.className = 'test-card running';
+    card.id = `card-${t.id}`;
+    card.innerHTML = `
+      <div class="test-bubble">${t.emoji}</div>
+      <div class="test-info">
+        <div class="test-name">${t.name}</div>
+        <div class="test-desc">${t.desc}</div>
+      </div>
+      <div class="test-pill">En attente</div>
+    `;
+    grid.appendChild(card);
+  });
+}
+
+function updateCard(id, pass) {
+  const card = document.getElementById(`card-${id}`);
+  if (!card) return;
+  card.className = `test-card ${pass?'pass':'fail'}`;
+  card.querySelector('.test-bubble').textContent = pass ? '✅' : '❌';
+  card.querySelector('.test-pill').textContent = pass ? 'Bloqué ✓' : 'Non bloqué';
+}
+
+function updateGlobal() {
+  const done = passed + failed;
+  document.getElementById('global-score').textContent = `${passed} / ${done}`;
+  if (done < total) return;
+
+  const allPass = failed===0;
+  const card = document.getElementById('global-card');
+  card.className = `global-card ${allPass?'pass':'fail'}`;
+  document.getElementById('global-emoji').textContent = allPass ? '🍿' : '😬';
+  document.getElementById('global-title').textContent = allPass ? 'Tout est bloqué — extension active !' : `Attention — ${failed} test(s) non bloqué(s)`;
+  document.getElementById('global-desc').textContent  = allPass ? 'Popup Blocker Pro fonctionne parfaitement sur tous les scénarios.' : "Vérifiez que l'extension est activée et que ce site n'est pas dans la liste blanche.";
+  document.getElementById('global-score').textContent = `${passed} / ${total}`;
+
+  if (allPass) { launchConfetti(); log('pass',`Résultat final : ${passed}/${total} — Extension ACTIVE et opérationnelle 🎉`); }
+  else         log('fail',`Résultat final : ${passed}/${total} — ${failed} scénario(s) non bloqué(s)`);
+}
+
+async function runTests() {
+  log('info','Démarrage des tests automatiques…');
+  for (const test of TESTS) {
+    await new Promise(r=>setTimeout(r,380));
+    log('info',`Test : "${test.name}"`);
+    let result;
+    try { result = await Promise.resolve(test.run()); } catch { result=true; }
+    updateCard(test.id, result);
+    if (result) { passed++; log('pass',`"${test.name}" — BLOQUÉ ✓`); }
+    else        { failed++; log('fail',`"${test.name}" — NON BLOQUÉ`); }
+    updateGlobal();
+  }
+}
+
+function manualTest(type) {
+  const el = document.getElementById('manual-result');
+  if (type==='click-open') {
+    const w = window.open('about:blank','_blank');
+    if(w) { w.close(); el.innerHTML=`<span style="color:#16a34a;font-weight:700;">✅ Fenêtre ouverte !</span> <span style="color:var(--muted)">Correct — un vrai clic doit être autorisé.</span>`; log('pass','Clic réel → autorisé (comportement normal)'); }
+    else  { el.innerHTML=`<span style="color:#d97706;font-weight:700;">⚠️ Bloqué même sur vrai clic</span> <span style="color:var(--muted)">Vérifiez le niveau de protection.</span>`; log('warn','Clic réel → bloqué (mode Strict ?)'); }
+  }
+  if (type==='blank-link') {
+    document.getElementById('blank-link').click();
+    el.innerHTML=`<span style="color:var(--purple);font-weight:700;">🔗 Lien cliqué !</span> <span style="color:var(--muted)">Vérifiez si un onglet s'est ouvert.</span>`;
+    log('info','Lien target=_blank → clic manuel déclenché');
+  }
+  if (type==='rapid-fire') {
+    let blocked=0;
+    for(let i=0;i<5;i++){const w=window.open(`about:blank?${i}`);if(w)w.close();else blocked++;}
+    const all=blocked===5;
+    el.innerHTML = all
+      ? `<span style="color:#16a34a;font-weight:700;">✅ ${blocked}/5 bloqués !</span> <span style="color:var(--muted)">Parfait, la rafale est entièrement neutralisée.</span>`
+      : `<span style="color:#dc2626;font-weight:700;">❌ Seulement ${blocked}/5 bloqués</span> <span style="color:var(--muted)">L'extension semble partiellement inactive.</span>`;
+    log(all?'pass':'fail',`Rafale × 5 : ${blocked}/5 popups bloqués`);
+  }
+}
+
+function launchConfetti() {
+  const colors=['#7b5cf0','#f5c330','#22c55e','#f472b6','#60a5fa','#5c3ec9'];
+  const emojis=['🍿','✨','🎉','💜','⭐','🧮'];
+  for(let i=0;i<52;i++) {
+    setTimeout(()=>{
+      const el=document.createElement('div');
+      el.className='confetti-piece';
+      if(Math.random()>.45){
+        Object.assign(el.style,{
+          left:`${Math.random()*100}vw`, top:'-20px',
+          background:colors[Math.floor(Math.random()*colors.length)],
+          width:`${7+Math.random()*10}px`, height:`${7+Math.random()*10}px`,
+          borderRadius:Math.random()>.5?'50%':'3px',
+          animation:`confettiFall ${1.5+Math.random()*2}s ease-in forwards`,
+        });
+      } else {
+        Object.assign(el.style,{
+          position:'fixed', left:`${Math.random()*100}vw`, top:'-30px',
+          fontSize:`${18+Math.random()*14}px`, zIndex:'9999', pointerEvents:'none',
+          animation:`confettiFall ${1.8+Math.random()*2}s ease-in forwards`,
+        });
+        el.textContent=emojis[Math.floor(Math.random()*emojis.length)];
+      }
+      document.body.appendChild(el);
+      setTimeout(()=>el.remove(),4500);
+    },i*55);
+  }
+}
+
+renderCards();
+window.addEventListener('load',()=>setTimeout(runTests,700));
+</script>
+</body>
+</html>
