@@ -575,6 +575,15 @@ Tests run automatically — everything should pass in green ✅
 
 ##
 
+Graphic Video
+
+Popup Blocker Pro, just the word popup made me think of popcorn jumping in the air, like an internet window that opens without warning and of course without your consent. I imagined the logo in this spirit, playful and fun and explicit at the same time: the popcorn in zero gravity refers to popup and the purple children's toy is rectangular in shape to evoke the idea of a window in reference to a web page (the square and rectangle side of screens on our various devices). This little amusing video is therefore the popcorn (the corn, cereal, grain) that comes to fight the purple window, in reference to the function of this extension that comes to block, fight against, and combat.
+Some web browser security extensions have a shield as their icon, here in this video, the hidden subtlety is that the popcorn kernel also has this same shape of a triangular shield with an ogival point.
+Fabien Conéjéro
+
+
+##
+
 ##
 
 🛡️ SECURITY BONUS : RECOMMENDED EXTENSIONS
