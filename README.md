@@ -595,7 +595,9 @@ See video file : HD-video-popup-blocker-pro-HD.mp4
 
 ##
 
-SECURITY BONUS : RECOMMENDED EXTENSIONS
+SECURITY BONUS : 
+
+RECOMMENDED EXTENSIONS
 In addition to Popup Blocker Pro, here are extensions that enhance your online security and privacy :
 
 HTTPS Everywhere
