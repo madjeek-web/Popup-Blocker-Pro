@@ -17,7 +17,7 @@ Browser Compatibility :
 
 ## 
 
-⚡ Quick Installation :
+Quick Installation :
 
 - Chrome / Edge / Brave / Opera :
 
@@ -39,7 +39,7 @@ Browser Compatibility :
 
 <img src="https://github.com/madjeek-web/Popup-Blocker-Pro/raw/main/image-sK5z9O_0K7BxzEt4Md1E9.jpg" width="320" height="320">
 
-🔗 OFFICIAL DOWNLOAD LINKS
+OFFICIAL DOWNLOAD LINKS
 
 For Google Chrome :
 
@@ -59,7 +59,7 @@ https://github.com/madjeek-web/Popup-Blocker-Pro/raw/main/releases/popup-blocker
 <img src="https://github.com/madjeek-web/Popup-Blocker-Pro/raw/main/3d-glassy-Google-CHROME-Edg.jpg" width="900" height="346">
 
 STEP 1 : FIND AND DOWNLOAD THE FILE
-Go to the GitHub repository: https://github.com/madjeek-web/Popup-Blocker-Pro
+Go to the GitHub repository : https://github.com/madjeek-web/Popup-Blocker-Pro
 
 Look for the file popup-blocker-pro-chrome.zip in the file list (inside the releases folder)
 
@@ -96,12 +96,12 @@ Simply double-click on the .zip file
 
 It automatically decompresses and creates a folder next to it
 
-⚠️ WARNING: You must KEEP this unzipped folder! Do not delete it after installation, otherwise the extension will stop working.
+WARNING : You must KEEP this unzipped folder! Do not delete it after installation, otherwise the extension will stop working.
 
 STEP 3 : OPEN THE EXTENSIONS PAGE IN CHROME
 Open Google Chrome (the browser)
 
-In the address bar (at the top, where you type website addresses), type exactly:
+In the address bar (at the top, where you type website addresses), type exactly :
 
 
 chrome://extensions
@@ -125,7 +125,7 @@ Click on the "Load unpacked" button (at the top left)
 
 A window opens to choose a folder on your computer
 
-Navigate to the folder you unzipped in STEP 2:
+Navigate to the folder you unzipped in STEP 2 :
 
 popup-blocker-pro-chrome (the folder, not the ZIP file!)
 
@@ -138,12 +138,12 @@ The extension now appears in the list of extensions on chrome://extensions
 
 Look at the top right of Chrome (near your profile icon)
 
-You should see a new icon 🔒 appear (the Popup Blocker Pro icon)
+You should see a new icon appear (the Popup Blocker Pro icon)
 
 The extension is enabled by default and works immediately
 
 HOW TO USE THE EXTENSION
-Click on the 🔒 icon in the toolbar
+Click on the icon in the toolbar
 
 A small window opens with :
 
@@ -209,7 +209,7 @@ RIGHT-CLICK on it
 
 In the menu, choose "Extract All..."
 
-A window opens: click on "Extract"
+A window opens : click on "Extract"
 
 RESULT : A new folder appears, called popup-blocker-pro-firefox (without .zip)
 
@@ -221,9 +221,9 @@ Simply double-click on the .zip file
 
 It automatically decompresses and creates a folder next to it
 
-⚠️ WARNING: You must KEEP this folder! Do not delete it after installation, otherwise the extension will stop working.
+WARNING: You must KEEP this folder! Do not delete it after installation, otherwise the extension will stop working.
 
-STEP 3: OPEN THE FIREFOX DEBUGGING PAGE
+STEP 3 : OPEN THE FIREFOX DEBUGGING PAGE
 Open Firefox (the browser)
 
 In the address bar (at the top, where you type website addresses), type exactly :
@@ -263,12 +263,12 @@ The extension now appears in the "Temporary Extensions" list
 
 Look at the top right of Firefox (near the menu icon ☰)
 
-You should see a new icon 🔒 appear (the Popup Blocker Pro icon)
+You should see a new icon appear (the Popup Blocker Pro icon)
 
 The extension is enabled and works immediately
 
 HOW TO USE THE EXTENSION
-Click on the 🔒 icon in the toolbar
+Click on the icon in the toolbar
 
 A small window opens with :
 
@@ -278,7 +278,7 @@ The number of blocked popups
 
 An "Options" button to adjust settings
 
-⚠️ IMPORTANT NOTE FOR FIREFOX
+IMPORTANT NOTE FOR FIREFOX
 Temporary extensions (loaded via about:debugging) only last for the current Firefox session. If you close and reopen Firefox, you'll need to load it again.
 
 For permanent installation, you'll need to submit the extension to Mozilla Add-ons store (or use Firefox Developer Edition for permanent unsigned extensions).
@@ -298,7 +298,7 @@ Click on "Remove" (button on the right)
 4. CLICK → "This Firefox" (left menu)
 5. CLICK → "Load Temporary Add-on"
 6. CHOOSE → manifest.json file INSIDE the folder
-7. DONE → The icon 🔒 appears at top right
+7. DONE → The icon appears at top right
 
 - KEY DIFFERENCE FROM CHROME :
 Browser	What to select
@@ -349,7 +349,7 @@ Iframes attempting to open windows
 User Interface :
 Toolbar icon
 
-Control popup with:
+Control popup with :
 
 ON/OFF switch
 
@@ -404,7 +404,7 @@ Installation and Packaging
 For Users :
 Download from GitHub Releases
 
-Step-by-step instructions for each browser:
+Step-by-step instructions for each browser :
 
 Chrome/Edge/Brave: Developer mode → Load unpacked extension
 
@@ -453,11 +453,11 @@ Video demo (optional)
 
 ##
 
-# 🚫 Popup Blocker Pro
+# Popup Blocker Pro
 
 Complete popup blocking extension for Chrome, Firefox, Edge, Brave, and Opera.
 
-## 📦 File Structure
+## File Structure
 
 ### Complete extension, file by file
 
@@ -491,7 +491,7 @@ Complete popup blocking extension for Chrome, Firefox, Edge, Brave, and Opera.
 | `popup-blocker-pro-firefox.zip` | Ready-to-use extension for Firefox (MV2) |
 | `popup-blocker-pro-source.zip` | Complete source code with build scripts |
 
-## 🏗 Implemented Architecture
+## Implemented Architecture
 
 ### Main components
 
@@ -503,7 +503,7 @@ Complete popup blocking extension for Chrome, Firefox, Edge, Brave, and Opera.
 
 ## 
 
-⚡ Quick Installation :
+Quick Installation :
 
 - Chrome / Edge / Brave / Opera :
 
@@ -534,12 +534,12 @@ If you simply want to display the page in the browser (to use it directly withou
 
 🌐 https://madjeek-web.github.io/popup-blocker-pro-test.html
 
-🧪 COMPREHENSIVE EXTENSION TEST PAGE
+COMPREHENSIVE EXTENSION TEST PAGE
 TEST : Complete HTML diagnostic page with multiple test scenarios (auto, manual, iframe, scripted links) — each test displays in real-time with PASS/FAIL. Security terminal style.
 
 File created, read a file: popup-blocker-pro-test.html
 
-🧪 What This Test Page Does
+What This Test Page Does
 Automatic Tests (launched on page load)
 #	Scenario	What It Verifies
 1	window.open() automatic	Basic popup blocking
@@ -555,19 +555,19 @@ Real user click	Checks that the extension isn't too aggressive (should allow it)
 target="_blank" link	Behavior of a standard link
 Burst × 5	5 popups at once
 
-🖥️ Interface
+Interface
 Feature	Description
 Global banner	Turns green/red in real-time
 Score display	Example : 6 / 6
 Event log	Timestamped log at the bottom
 Design	Terminal/cybersecurity theme consistent with the extension
 
-📋 How to Use
+How to Use
 Install the extension
 
 Open popup-blocker-pro-test.html in your browser
 
-Tests run automatically — everything should pass in green ✅
+Tests run automatically - everything should pass in green 
 
 ![popup-blocker-Pro-test-2.jpg](https://github.com/madjeek-web/Popup-Blocker-Pro/raw/main/popup-blocker-Pro-test-2.jpg)
 
@@ -591,47 +591,47 @@ See video file : HD-video-popup-blocker-pro-HD.mp4
 
 ##
 
-🛡️ SECURITY BONUS : RECOMMENDED EXTENSIONS
+SECURITY BONUS : RECOMMENDED EXTENSIONS
 In addition to Popup Blocker Pro, here are extensions that enhance your online security and privacy :
 
-🔒 HTTPS Everywhere
+HTTPS Everywhere
 Automatically redirects to the HTTPS version of websites for a more secure and encrypted browsing experience.
 -
 [![Add to Chrome](https://img.shields.io/badge/Chrome-Add%20Extension-4285F4?logo=googlechrome&logoColor=white&style=for-the-badge)](https://chrome.google.com/webstore/detail/https-everywhere/gcbommkclmclpchllfjekcdonpmejbdp)
 
-🛡️ McAfee® WebAdvisor
+McAfee® WebAdvisor
 Browse safely : McAfee® WebAdvisor warns you about dangerous sites, suspicious links, and malicious downloads.
 -
 [![Add to Chrome](https://img.shields.io/badge/Chrome-Add%20Extension-4285F4?logo=googlechrome&logoColor=white&style=for-the-badge)](https://chrome.google.com/webstore/detail/mcafee-webadvisor/fheoggkfdfchfphceeifdbepaooicaho)
 
-🕵️ Privacy Badger
+Privacy Badger
 Blocks hidden trackers. Created by the EFF (Electronic Frontier Foundation), a digital rights nonprofit, to prevent companies from spying on you.
 -
 [![Add to Chrome](https://img.shields.io/badge/Chrome-Add%20Extension-4285F4?logo=googlechrome&logoColor=white&style=for-the-badge)](https://chrome.google.com/webstore/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp)
 
 
-🚫 uBlock Origin Lite
+uBlock Origin Lite
 An efficient and lightweight content blocker. Blocks intrusive ads, trackers, cryptocurrency miners, and more, right after installation.
 -
 [![Add to Chrome](https://img.shields.io/badge/Chrome-Add%20Extension-4285F4?logo=googlechrome&logoColor=white&style=for-the-badge)](https://chrome.google.com/webstore/detail/ublock-origin-lite/ddkjiahejlhfcafbddmgiahcphecmpfh)
 
-🟢 Bitdefender TrafficLight (NEW)
+Bitdefender TrafficLight (NEW)
 A lightweight extension from renowned security company Bitdefender. It displays a color-coded indicator (green/red) next to search results to warn you about dangerous sites. It also blocks phishing attempts, malware, and fraudulent websites in real-time.
 -
 [![Add to Chrome](https://img.shields.io/badge/Chrome-Add%20Extension-4285F4?logo=googlechrome&logoColor=white&style=for-the-badge)](https://chrome.google.com/webstore/detail/bitdefender-trafficlight/cpojdnbpfidcfpciafhoooageljjhbbm)
 
-🔐 Bitwarden (NEW)
+Bitwarden (NEW)
 An open-source password manager, widely recognized as one of the most secure and reliable. It stores your passwords, credit cards, and notes in an encrypted vault, automatically fills them on websites, and syncs across all your devices. The free version is extremely generous.
 -
 [![Add to Chrome](https://img.shields.io/badge/Chrome-Add%20Extension-4285F4?logo=googlechrome&logoColor=white&style=for-the-badge)](https://chrome.google.com/webstore/detail/bitwarden-password-manage/nngceckbapebfimnlniiiahkandclblb)
 
-🛡️ Guardio (NEW)
+Guardio (NEW)
 A powerful security extension that protects against phishing, malicious sites, and scams. It actively blocks harmful websites and alerts you if your personal information (email, passwords) has been exposed in a data breach. It's a comprehensive solution that secures your browser without slowing it down.
 -
 [![Add to Chrome](https://img.shields.io/badge/Chrome-Add%20Extension-4285F4?logo=googlechrome&logoColor=white&style=for-the-badge)](https://chrome.google.com/webstore/detail/guardio-protect-your-onli/ejhfadfbfhlamhcbeplldooogdmehgek)
 
 
-. 💡 Why These Extensions ?
+. Why These Extensions ?
 These 7 extensions perfectly complement Popup Blocker Pro for maximum protection :
 
 Extension	Primary Role
@@ -642,6 +642,4 @@ uBlock Origin Lite	Removes ads and miners
 Bitdefender TrafficLight	Visual indicator for safe/unsafe sites
 Bitwarden	Secure password manager
 Guardio	All-in-one browser security
-🔐 Together, these extensions + Popup Blocker Pro = a safer, more private, and worry-free browsing experience !
-
-📌 Tip : Click the links to install directly from the Chrome Web Store!
+Together, these extensions + Popup Blocker Pro = a safer, more private, and worry-free browsing experience !
