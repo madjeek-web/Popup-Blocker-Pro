@@ -60,7 +60,9 @@ https://github.com/madjeek-web/Popup-Blocker-Pro/raw/main/releases/popup-blocker
 <img src="https://github.com/madjeek-web/Popup-Blocker-Pro/raw/main/3d-glassy-Google-CHROME-Edg.jpg" width="900" height="346">
 
 STEP 1 : FIND AND DOWNLOAD THE FILE
-Go to the GitHub repository : https://github.com/madjeek-web/Popup-Blocker-Pro
+Go to the GitHub repository : 
+
+https://github.com/madjeek-web/Popup-Blocker-Pro
 
 Look for the file popup-blocker-pro-chrome.zip in the file list (inside the releases folder)
 
