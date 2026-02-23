@@ -59,6 +59,8 @@ Quick Installation :
 4. Click on "Load Temporary Add-on"
 5. Select the manifest.json file inside the unzipped folder
 
+<img src="https://github.com/madjeek-web/Popup-Blocker-Pro/raw/main/standalone_page_img_demo_screen.jpg" width="100%" height="100%">
+
 ##
 
 <img src="https://github.com/madjeek-web/Popup-Blocker-Pro/raw/main/image-sK5z9O_0K7BxzEt4Md1E9.jpg" width="320" height="320">
