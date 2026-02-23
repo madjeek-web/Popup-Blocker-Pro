@@ -1,3 +1,11 @@
+[![CI](https://github.com/madjeek-web/Popup-Blocker-Pro/actions/workflows/ci.yml/badge.svg)](https://github.com/madjeek-web/Popup-Blocker-Pro/actions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Chrome MV3](https://img.shields.io/badge/Chrome-Manifest%20V3-4285F4?logo=googlechrome&logoColor=white)](https://developer.chrome.com/docs/extensions/mv3/)
+[![Firefox MV2](https://img.shields.io/badge/Firefox-Manifest%20V2-E66000?logo=firefox&logoColor=white)](https://extensionworkshop.com/)
+[![Vanilla JS](https://img.shields.io/badge/JavaScript-Vanilla%20ES6%2B-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Zero Data Collection](https://img.shields.io/badge/Privacy-Zero%20Data%20Collection-00D4AA)](https://github.com/madjeek-web/Popup-Blocker-Pro/blob/main/SECURITY.md)
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](CONTRIBUTING.md)
+
 <img src="https://github.com/madjeek-web/Popup-Blocker-Pro/raw/main/image-Y5jEhWHje1ltdiW8yaG2I.jpg" width="320" height="320">
 
 
@@ -5,6 +13,9 @@
 Popup Blocker Pro : an open source, free, secure and powerful browser extension that blocks attempts to open tabs in the background without user consent. 
 
 By : Fabien Conéjéro
+
+## Live Demo : 
+ **[Try the interactive demo →](https://madjeek-web.github.io/Popup-Blocker-Pro_demo.html)**
 
 ##
 
