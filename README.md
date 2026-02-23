@@ -638,6 +638,7 @@ A powerful security extension that protects against phishing, malicious sites, a
 
 
 . Why These Extensions ?
+
 These 7 extensions perfectly complement Popup Blocker Pro for maximum protection :
 
 Extension	Primary Role
