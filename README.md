@@ -19,15 +19,15 @@ By : Fabien Conéjéro
 
  About this demo page :
 
-100 % standalone page (zero external dependency except Google Fonts). What it does :
+- 100 % standalone page (zero external dependency except Google Fonts). What it does :
 
-Auto-triggers 2.5s after loading (silent popup intercepted)
-Simulate a real Chrome browser with an address bar, traffic lights, extension icon in the toolbar
-Contains a questionable fake streaming site (FreeMovies4K) to stage the danger
-The extension "slides" into an animated popup from the top-right corner of the window with the real design of the extension
-Functional "🛡 Keep Blocked" / "↗ Allow Once" buttons (Allow actually opens the URL)
-Real-time timestamp log, animated statistical counters, red flash on the viewport at each attempt
-Manual buttons: Auto popup, Delayed (1s), Burst 3, Reset
+- Auto-triggers 2.5s after loading (silent popup intercepted)
+- Simulate a real Chrome browser with an address bar, traffic lights, extension icon in the toolbar
+- Contains a questionable fake streaming site (FreeMovies4K) to stage the danger
+- The extension "slides" into an animated popup from the top-right corner of the window with the real design of the extension
+- Functional "Keep Blocked" / "↗ Allow Once" buttons (Allow actually opens the URL)
+- Real-time timestamp log, animated statistical counters, red flash on the viewport at each attempt
+- Manual buttons: Auto popup, Delayed (1s), Burst 3, Reset
 
 ##
 
