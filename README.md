@@ -600,39 +600,39 @@ SECURITY BONUS :
 RECOMMENDED EXTENSIONS
 In addition to Popup Blocker Pro, here are extensions that enhance your online security and privacy :
 
-<sub><p>HTTPS Everywhere
-Automatically redirects to the HTTPS version of websites for a more secure and encrypted browsing experience.</p></sub>
+<sub>HTTPS Everywhere
+Automatically redirects to the HTTPS version of websites for a more secure and encrypted browsing experience.</sub>
 -
 [![Add to Chrome](https://img.shields.io/badge/Chrome-Add%20Extension-4285F4?logo=googlechrome&logoColor=white&style=for-the-badge)](https://chrome.google.com/webstore/detail/https-everywhere/gcbommkclmclpchllfjekcdonpmejbdp)
 
-McAfee® WebAdvisor
-Browse safely : McAfee® WebAdvisor warns you about dangerous sites, suspicious links, and malicious downloads.
+<sub>McAfee® WebAdvisor
+Browse safely : McAfee® WebAdvisor warns you about dangerous sites, suspicious links, and malicious downloads.</sub>
 -
 [![Add to Chrome](https://img.shields.io/badge/Chrome-Add%20Extension-4285F4?logo=googlechrome&logoColor=white&style=for-the-badge)](https://chrome.google.com/webstore/detail/mcafee-webadvisor/fheoggkfdfchfphceeifdbepaooicaho)
 
-Privacy Badger
-Blocks hidden trackers. Created by the EFF (Electronic Frontier Foundation), a digital rights nonprofit, to prevent companies from spying on you.
+<sub>Privacy Badger
+Blocks hidden trackers. Created by the EFF (Electronic Frontier Foundation), a digital rights nonprofit, to prevent companies from spying on you.</sub>
 -
 [![Add to Chrome](https://img.shields.io/badge/Chrome-Add%20Extension-4285F4?logo=googlechrome&logoColor=white&style=for-the-badge)](https://chrome.google.com/webstore/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp)
 
 
-uBlock Origin Lite
-An efficient and lightweight content blocker. Blocks intrusive ads, trackers, cryptocurrency miners, and more, right after installation.
+<sub>uBlock Origin Lite
+An efficient and lightweight content blocker. Blocks intrusive ads, trackers, cryptocurrency miners, and more, right after installation.</sub>
 -
 [![Add to Chrome](https://img.shields.io/badge/Chrome-Add%20Extension-4285F4?logo=googlechrome&logoColor=white&style=for-the-badge)](https://chrome.google.com/webstore/detail/ublock-origin-lite/ddkjiahejlhfcafbddmgiahcphecmpfh)
 
-Bitdefender TrafficLight (NEW)
-A lightweight extension from renowned security company Bitdefender. It displays a color-coded indicator (green/red) next to search results to warn you about dangerous sites. It also blocks phishing attempts, malware, and fraudulent websites in real-time.
+<sub>Bitdefender TrafficLight (NEW)
+A lightweight extension from renowned security company Bitdefender. It displays a color-coded indicator (green/red) next to search results to warn you about dangerous sites. It also blocks phishing attempts, malware, and fraudulent websites in real-time.</sub>
 -
 [![Add to Chrome](https://img.shields.io/badge/Chrome-Add%20Extension-4285F4?logo=googlechrome&logoColor=white&style=for-the-badge)](https://chrome.google.com/webstore/detail/bitdefender-trafficlight/cpojdnbpfidcfpciafhoooageljjhbbm)
 
-Bitwarden (NEW)
-An open-source password manager, widely recognized as one of the most secure and reliable. It stores your passwords, credit cards, and notes in an encrypted vault, automatically fills them on websites, and syncs across all your devices. The free version is extremely generous.
+<sub>Bitwarden (NEW)
+An open-source password manager, widely recognized as one of the most secure and reliable. It stores your passwords, credit cards, and notes in an encrypted vault, automatically fills them on websites, and syncs across all your devices. The free version is extremely generous.</sub>
 -
 [![Add to Chrome](https://img.shields.io/badge/Chrome-Add%20Extension-4285F4?logo=googlechrome&logoColor=white&style=for-the-badge)](https://chrome.google.com/webstore/detail/bitwarden-password-manage/nngceckbapebfimnlniiiahkandclblb)
 
-Guardio (NEW)
-A powerful security extension that protects against phishing, malicious sites, and scams. It actively blocks harmful websites and alerts you if your personal information (email, passwords) has been exposed in a data breach. It's a comprehensive solution that secures your browser without slowing it down.
+<sub>Guardio (NEW)
+A powerful security extension that protects against phishing, malicious sites, and scams. It actively blocks harmful websites and alerts you if your personal information (email, passwords) has been exposed in a data breach. It's a comprehensive solution that secures your browser without slowing it down.</sub>
 -
 [![Add to Chrome](https://img.shields.io/badge/Chrome-Add%20Extension-4285F4?logo=googlechrome&logoColor=white&style=for-the-badge)](https://chrome.google.com/webstore/detail/guardio-protect-your-onli/ejhfadfbfhlamhcbeplldooogdmehgek)
 
