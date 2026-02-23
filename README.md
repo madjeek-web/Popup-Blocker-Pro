@@ -29,6 +29,8 @@ By : Fabien Conéjéro
 - Real-time timestamp log, animated statistical counters, red flash on the viewport at each attempt
 - Manual buttons: Auto popup, Delayed (1s), Burst 3, Reset
 
+<img src="https://github.com/madjeek-web/Popup-Blocker-Pro/raw/main/standalone_page_img_demo_screen.jpg" width="100%" height="100%">
+
 ##
 
 Browser Compatibility :
@@ -58,8 +60,6 @@ Quick Installation :
 3. Click on "This Firefox" in the left menu
 4. Click on "Load Temporary Add-on"
 5. Select the manifest.json file inside the unzipped folder
-
-<img src="https://github.com/madjeek-web/Popup-Blocker-Pro/raw/main/standalone_page_img_demo_screen.jpg" width="100%" height="100%">
 
 ##
 
