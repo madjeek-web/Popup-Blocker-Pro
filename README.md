@@ -600,8 +600,8 @@ SECURITY BONUS :
 RECOMMENDED EXTENSIONS
 In addition to Popup Blocker Pro, here are extensions that enhance your online security and privacy :
 
-<sub>HTTPS Everywhere
-Automatically redirects to the HTTPS version of websites for a more secure and encrypted browsing experience.</sub>
+<p>HTTPS Everywhere
+Automatically redirects to the HTTPS version of websites for a more secure and encrypted browsing experience.</P>
 -
 [![Add to Chrome](https://img.shields.io/badge/Chrome-Add%20Extension-4285F4?logo=googlechrome&logoColor=white&style=for-the-badge)](https://chrome.google.com/webstore/detail/https-everywhere/gcbommkclmclpchllfjekcdonpmejbdp)
 
