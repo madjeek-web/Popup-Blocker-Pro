@@ -630,8 +630,8 @@ Automatically redirects to the HTTPS version of websites for a more secure and e
 -
 [![Add to Chrome](https://img.shields.io/badge/Chrome-Add%20Extension-4285F4?logo=googlechrome&logoColor=white&style=for-the-badge)](https://chrome.google.com/webstore/detail/https-everywhere/gcbommkclmclpchllfjekcdonpmejbdp)
 
-<p>McAfee® WebAdvisor
-Browse safely : McAfee® WebAdvisor warns you about dangerous sites, suspicious links, and malicious downloads.</p>
+<sub>McAfee® WebAdvisor
+Browse safely : McAfee® WebAdvisor warns you about dangerous sites, suspicious links, and malicious downloads</sub>
 -
 [![Add to Chrome](https://img.shields.io/badge/Chrome-Add%20Extension-4285F4?logo=googlechrome&logoColor=white&style=for-the-badge)](https://chrome.google.com/webstore/detail/mcafee-webadvisor/fheoggkfdfchfphceeifdbepaooicaho)
 
